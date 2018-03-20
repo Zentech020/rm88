@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "company",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "company_name": {
+      "type": "string",
+      "multiple": false
+    },
+    "company_img": {
+      "type": "string",
+      "multiple": false
+    },
+    "company_desc": {
+      "type": "text",
+      "multiple": false
+    },
+    "roadmaps": {
+      "collection": "roadmaps",
+      "via": "company"
+    }
+  }
+}

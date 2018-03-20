@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/roadmaps",
+      "handler": "Roadmaps.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roadmaps/:_id",
+      "handler": "Roadmaps.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/roadmaps",
+      "handler": "Roadmaps.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/roadmaps/:_id",
+      "handler": "Roadmaps.inc",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/roadmaps/:_id",
+      "handler": "Roadmaps.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+
+
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  height: 350px;
+  padding: 20px;
+  color: black;
+  background:   linear-gradient(
+    rgb(255, 255, 255), 
+    rgba(255, 255, 255, 0.45)
+  ),url(https://i.imgur.com/MNhQGTw.jpg);
+  background-size:cover;
+  background-position: bottom center;
+  position: relative;
+}
+
+.App-title {
+  font-size: 60px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  font-family: 'Playfair Display', serif;
+  
+}
+
+
+
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.company_container{
+  height:80px;
+border-radius: 20px;
+padding:0px;
+margin-top:50px;
+padding-left:0px;
+border-color: #e5e5e5 #dbdbdb #d2d2d2;
+-webkit-border-radius: 20px;
+-moz-border-radius:20px;
+border-radius: 20px;
+-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+transition: top ease 0.5s;
+}
+.company_container:hover{
+  top:-10px;
+}
+
+.company_container img{
+  height: 100%;
+  border-top-left-radius: 20px 20px;
+  border-bottom-left-radius: 20px 20px;
+  float: left;
+  width: 60%;
+}
+#company_img_container {
+  padding:0px;
+}
+.company_desc{
+  text-align: left;
+}
+.company_desc h1{
+  font-size:22px;
+  margin:5px 0px;
+  text-align: left;
+}
+
+
+#company_link {
+  height: 100%;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  float: right;
+  background:white;
+  padding:0px;  
+}
+
+#company_link h1{
+  color:#392dbc;
+  font-family: 'Playfair Display', serif;
+}
+#company_link h1:hover{
+  color:green;
+}
+
+.Company-header{
+  height:350px;
+  background: #4e54c8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: relative;
+  
+}
+
+
+
+.Company-header h1 {
+  font-size: 90px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -9px;
+
+  
+}
+
+.roadmap_table{
+ height:300px;
+ margin-top:50px;
+ border: 1px solid black;
+}
+.roadmap_table img{
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  margin: 20px;
+}
+.segment1{
+  height:150px;
+}
+
+.roadmap_text{
+  text-align: left;
+}
+.vote-up{
+  border:1px solid black;
+}
+.vote-up h1{
+  margin:20px;
+  text-align: center;
+}
+
+
+
+/* ========================================================================*/
+/* ! VARIABLES */
+/* ========================================================================*/
+/* ========================================================================*/
+/* ! TYPO */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! COMPOSANTS */
+/*---------------------------------------------*/
+.bloc {
+  color: #fff;
+}
+
+/* ========================================================================*/
+/* ! MIXINS & HELPER CLASS */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! HELPER CLASSES */
+/*---------------------------------------------*/
+.brick {
+  background-color: #ff8357;
+}
+
+.blue {
+  background-color: #4398b7;
+}
+
+.yellow {
+  background-color: #ffdd57;
+}
+
+.indigo {
+  background-color: #83c7d4;
+}
+
+.anthracite {
+  background-color: #414a53;
+}
+
+.green {
+  background-color: #87c97f;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-padding-horizontal {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* --------------------------------------------*/
+/* ! DECORATION & EFFECTS */
+/*---------------------------------------------*/
+/* ========================================================================*/
+/* ! LAYOUT */
+/* ========================================================================*/
+.section-mosaic {
+  margin-top: 35px;
+}
+
+.section-mosaic + .section-mosaic {
+  margin-top: 20px;
+}
+
+/* ========================================================================*/
+/* ! COMPOSANTS */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! MOSAIC */
+/*---------------------------------------------*/
+.col-small-high-bloc .row .bloc-small {
+  bottom: 0;
+}
+.col-small-high-bloc .bloc-small-parent + .bloc-small-parent {
+  top: 15px;
+  bottom: 7.5px;
+}
+.col-small-high-bloc .row .bloc-small {
+  top: 21.5px;
+  bottom: 0;
+}
+
+/* --------------------------------------------*/
+/* ! BLOCS MOSAIC */
+/*---------------------------------------------*/
+.bloc {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bloc-big-parent .bloc-big {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+.bloc-big-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 68.8%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+.bloc-high-parent .bloc-high {
+  position: relative;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+.bloc-high-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 145.5%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+.bloc-small-parent .bloc-small {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 0;
+  left: 15px;
+}
+.bloc-small-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 67%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bloc-big-parent::before {
+    padding-bottom: 69.15%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-high-parent::before {
+    padding-bottom: 148%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-small-parent::before {
+    padding-bottom: 67%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .bloc-big-parent::before {
+    padding-bottom: 66.05%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-high-parent .bloc-high {
+    top: 45px;
+  }
+  .bloc-high-parent::before {
+    padding-bottom: 93.6%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-small-parent::before {
+    padding-bottom: 64.92%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+@media (max-width: 767px) {
+  .bloc-big-parent::before {
+    padding-bottom: 66.05%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-high-parent .bloc-high {
+    top: 45px;
+  }
+  .bloc-high-parent::before {
+    padding-bottom: 73.796%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-small-parent::before {
+    padding-bottom: 64.92%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+/* ========================================================================*/
+/* ! VARIABLES */
+/* ========================================================================*/
+/* ========================================================================*/
+/* ! TYPO */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! COMPOSANTS */
+/*---------------------------------------------*/
+.bloc {
+  color: #fff;
+}
+
+/* ========================================================================*/
+/* ! MIXINS & HELPER CLASS */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! HELPER CLASSES */
+/*---------------------------------------------*/
+.brick {
+  background-color: #ff8357;
+}
+
+.first {
+  background-color: #4398b7;
+}
+
+.yellow {
+  background-color: #ffdd57;
+}
+
+.rate {
+  background-color: #F7B733;
+}
+.up {
+  background-color: #4abdac;
+}
+
+.down {
+  background-color: #fc4a1a;
+}
+
+.green {
+  background-color: #87c97f;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-padding-horizontal {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* --------------------------------------------*/
+/* ! DECORATION & EFFECTS */
+/*---------------------------------------------*/
+/* ========================================================================*/
+/* ! LAYOUT */
+/* ========================================================================*/
+.section-mosaic {
+  margin-top: 35px;
+}
+
+.section-mosaic + .section-mosaic {
+  margin-top: 0;
+}
+
+/* ========================================================================*/
+/* ! COMPOSANTS */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! MOSAIC */
+/*---------------------------------------------*/
+.col-small-high-bloc .row .bloc-small {
+  bottom: 0;
+}
+.col-small-high-bloc .bloc-small-parent + .bloc-small-parent {
+  top: 15px;
+  bottom: 7.5px;
+}
+.col-small-high-bloc .row .bloc-small {
+  top: 21.5px;
+  bottom: 0;
+}
+
+/* --------------------------------------------*/
+/* ! BLOCS MOSAIC */
+/*---------------------------------------------*/
+.bloc {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bloc-big-parent .bloc-big {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+.bloc-big-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 68.8%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+.bloc-high-parent .bloc-high {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+.bloc-high-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 145.5%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+.bloc-small-parent .bloc-small {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 0;
+  left: 15px;
+}
+.bloc-small-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 67%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bloc-big-parent::before {
+    padding-bottom: 69.15%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-high-parent::before {
+    padding-bottom: 148%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-small-parent::before {
+    padding-bottom: 67%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .bloc-big-parent::before {
+    padding-bottom: 66.05%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-high-parent .bloc-high {
+    top: 45px;
+  }
+  .bloc-high-parent::before {
+    padding-bottom: 93.6%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-small-parent::before {
+    padding-bottom: 64.92%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+@media (max-width: 767px) {
+  .bloc-big-parent::before {
+    padding-bottom: 66.05%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-high-parent .bloc-high {
+    top: 45px;
+  }
+  .bloc-high-parent::before {
+    padding-bottom: 73.796%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+
+  .bloc-small-parent::before {
+    padding-bottom: 64.92%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+
+
+.bloc-big-parent h1{
+  text-align: center;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  
+}
+.bloc-big-parent p {
+  text-align: center;
+  margin:30px 30px;
+  font-size:18px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+}
+
+.bloc-big-parent a {
+  text-align: center;
+  margin:0 30px;
+  font-size:18px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.bloc-high-parent h1{
+  font-size: 90px;
+  font-weight: bold;
+text-align: center;
+margin:120px auto;
+color:black;
+font-family: 'Playfair Display', serif;
+
+}
+.up img{
+  width:40%;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.down img{
+  width:40%;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+
+.rm-88-list {
+  height:100px;
+  min-height: 100px;
+  margin-top:50px;
+}
+
+.rm-88-list img {
+  height:40px;
+  widows: 40px;
+  margin: 0 auto;
+  margin-top:10px;
+}
+.rm-88-img-container{
+  height:100px;
+  text-align: center;
+}
+
+.rm-88-text-container{
+  height:100px;
+}
+.rm-88-rating-container{
+  height:100px;
+  text-align: center;
+}
+
+.rm-88-number-container{
+  height:100px;
+margin-top:40px;
+}
+
+.rm-88-number-container {
+  margin-top:40px;  
+}
+.rm-88-arrow-container {
+  width:100px;
+  margin-top:15px;
+}
+
+i {
+  height:40px;
+  width:100px;
+  cursor: pointer;
+}
+i:hover{
+  transform: scale(1.1);
+}

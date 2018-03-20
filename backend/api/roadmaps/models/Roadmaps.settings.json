@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "roadmaps",
+  "info": {
+    "name": "roadmaps",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "roadmap_title": {
+      "type": "string",
+      "multiple": false
+    },
+    "roadmap_img": {
+      "type": "string",
+      "multiple": false
+    },
+    "roadmap_desc": {
+      "type": "text",
+      "multiple": false
+    },
+    "roadmaps_likes": {
+      "type": "integer",
+      "multiple": false
+    },
+    "company": {
+      "model": "company",
+      "via": "roadmaps"
+    }
+  }
+}
